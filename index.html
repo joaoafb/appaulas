@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Inicio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+    </style>
+
+    <script src="js/script.js"></script>
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/16ee299e03.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="logo">
+            <img class="userlogo" src="https://www.ifpb.edu.br/prpipg/pesquisa/imagens-pesquisa/ifpb.png/@@images/0609b1d7-4a7d-41be-bd18-081ecb35eb9e.png" alt="Usuario">
+        </div>
+        <h1 class="titulo">Link Das Aulas</h1><br>
+        <!--DIV BOTOES DAS AULAS-->
+        <div id="boxbtn" class="boxbtn">
+            <h2 style="color: white;text-align: center;font-size: 15pt;">Selecione Sua Turma</h2><br>
+            <div class="btn">
+
+
+                <button type="button" data-bs-target="#modal1" data-bs-toggle="modal" class="btn btn-success">1º Ano</button>
+                <br>
+                <button type="button" data-bs-target="#modal2" data-bs-toggle="modal" class="btn btn-success">2º Ano</button>
+                <br>
+            </div>
+
+        </div>
+
+        <!--DIV ATUALIZACAO DO APP-->
+        <div id="boxupdate" class="boxupdate">
+            <div class="msg">
+                <h2>
+                    Atualização Disponivel
+                </h2>
+                <button type="button" id="btnupdate" class="btn btn-success ">Baixar</button></div>
+
+        </div>
+        <!--DIV MSG-->
+        <div id="boxmsg" class="boxmsg">
+            <div class="msg">
+                <h2 id="msg">
+                    INFORMATIVO AQUI
+                </h2>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!--MODAL1-->
+    <div class="modal fade " id="modal1" aria-hidden="true " aria-labelledby="exampleModalToggleLabel " tabindex="-1 ">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title " id="exampleModalToggleLabel ">1º Ano IFBA</h5>
+
+                </div>
+                <div class="modal-body ">
+                    <div class="btnmodal ">
+
+                        <button id="btnadm1" onclick="adm1()" type="button " class="btn btn-success ">Administração</button>
+
+                        <br>
+                        <button type="button" onclick="seg1()" class="btn btn-success ">Segurança No Trabalho</button>
+                        <br>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL 2-->
+    <div class="modal fade " id="modal2" aria-hidden="true " aria-labelledby="exampleModalToggleLabel " tabindex="-1 ">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title " id="exampleModalToggleLabel ">2º Ano IFBA</h5>
+                </div>
+                <div class="modal-body ">
+                    <div class="btnmodal ">
+                        <button type="button" onclick="adm2()" class="btn btn-success ">Administração</button>
+                        <br>
+                        <button type="button" onclick="seg2()" class="btn btn-success ">Segurança No Trabalho</button>
+                        <br>
+                        <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Voltar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--FOOTER-->
+
+
+
+
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ " crossorigin="anonymous "></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js " integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js " integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/ " crossorigin="anonymous "></script>
+    -->
+</body>
+<script src="linkdasaulas.js"></script>
+
+</html>
